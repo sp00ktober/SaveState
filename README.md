@@ -24,6 +24,10 @@ For support or to discuss any other modding related topic you can join our [Star
 
 ## Changelog
 
+0.0.2:
+
+- hotfix regarding assetbundle location.
+
 0.0.1:
 
 - Initial release

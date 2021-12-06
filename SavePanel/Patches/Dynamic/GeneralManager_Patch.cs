@@ -3,6 +3,8 @@ using HarmonyLib;
 using JNM.Storage;
 using SavePanel.Managers;
 using System.Collections;
+using System.IO;
+using System.Reflection;
 using UnityEngine;
 
 /*
@@ -27,7 +29,7 @@ namespace SavePanel.Patches.Dynamic
 
             if (!GameObjectManager.loadedIntoGame)
             {
-                GameObjectManager.bundle = AssetBundle.LoadFromFile(Paths.PluginPath + "\\meridian");
+                GameObjectManager.bundle = AssetBundle.LoadFromFile(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\meridian");
 
                 GameObject meridianBase = GameObjectManager.bundle.LoadAsset<GameObject>("Assets/Prefabs/blender.prefab");
                 GameObject orig = GameObjectManager.FindGameObject("meridian_02", 2);

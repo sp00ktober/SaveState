@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace SavePanel
 {
-    [BepInPlugin("com.sp00ktober.SavePanel", "SavePanel", "0.0.1")]
+    [BepInPlugin("com.sp00ktober.SavePanel", "SavePanel", "0.0.2")]
     public class SavePanel : BaseUnityPlugin
     {
         private void Awake()
@@ -21,7 +21,7 @@ namespace SavePanel
 
             try
             {
-                Debug.Log("Applying patches from SavePanel 0.0.1");
+                Debug.Log("Applying patches from SaveState 0.0.2");
 #if DEBUG
                 if (Directory.Exists("./mmdump"))
                 {

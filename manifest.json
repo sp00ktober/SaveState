@@ -1,7 +1,7 @@
 {
   "name": "SaveState",
   "description": "BepInEx mod for Starsand to manage multiple savestates.",
-  "version_number": "0.0.1",
+  "version_number": "0.0.2",
   "dependencies": [
     "BepInEx-BepInExPack_Starsand-5.4.16"
   ],
